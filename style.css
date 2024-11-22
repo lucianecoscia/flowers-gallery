@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;  
+}
+
+body{
+    background-image:linear-gradient(purple, rgb(14, 127, 131));
+    
+}
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+header h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #e6f517;
+   text-shadow: 0.1em  0.1em  0.2em black;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 5vw;
+    padding: 0 8vw
+}
+.gallery-items {
+    width: 280px;
+    height: 280px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 5px black;
+    flex-grow: 1;
+    filter: grayscale(100%);
+    
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.gallery-items:hover{
+    transform: scale(1.1);
+    filter: none;
+}
+
+
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 5vw;
+    padding: 0 8vw
+}
+
+.gallery-items1 {
+    width: 280px;
+    height: 400px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 5px #000600;
+    flex-grow: 1;
+    opacity: 50%;
+   
+}
+
+.gallery-items1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+
+.gallery-items1:hover{
+    transform: scale(1.1);
+}
+
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 5vw;
+    padding: 0 8vw
+}
+
+.gallery-items2 {
+    width: 280px;
+    height: 280px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 5px #000600;
+    flex-grow: 1;
+    filter: sepia(100%);
+}
+
+.gallery-items2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+
+}
+
+.gallery-items2:hover{
+    transform: scale(1.1);
+    filter: none;
+}
+
+
+footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-style: normal;
+    font-size: 200%;
+}
